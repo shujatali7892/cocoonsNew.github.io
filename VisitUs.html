@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+<html lang="en" xml:lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+    <title> Visit Us </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/2.png">
+    <link rel="apple-touch-icon" href="./assets/img/logo/2.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/FontsFree-Net-Metropolis-Regular-400.ttf">
+    <link rel="stylesheet" href="./assets/fonts/metropolis.regular.otf">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/extrastyle.css" rel="stylesheet">
+    <link href="./assets/css/contact.css" rel="stylesheet">
+    <link rel="preload" href="./assets/css/globald244.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ 
+    <style>
+        .slider-sl {
+            -webkit-box-align: baseline;
+            -moz-box-align: baseline;
+            -ms-flex-align: baseline;
+            -webkit-align-items: baseline;
+            align-items: baseline;
+            background: #c41e3a;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 90vh;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows {
+            display: block;
+            height: 100%;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows:after,
+        .slider-sl .bg-shadows:before {
+            content: "";
+            left: 0;
+            opacity: .28;
+            position: absolute;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows:before {
+            height: 60%;
+            top: 0
+        }
+
+        .slider-sl .bg-shadows:after,
+        .slider-sl .bg-shadows:before {
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(84, 84, 84, 0)));
+            background: -webkit-linear-gradient(#000, rgba(84, 84, 84, 0));
+            background: -moz-linear-gradient(#000 0, rgba(84, 84, 84, 0) 100%);
+            background: -o-linear-gradient(#000 0, rgba(84, 84, 84, 0) 100%);
+            background: linear-gradient(#000, rgba(84, 84, 84, 0))
+        }
+
+        .slider-sl .bg-shadows:after {
+            bottom: 0;
+            height: 40%;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        @media screen and (max-width:767px) {
+            .slider-sl .bg-shadows {
+                display: none
+            }
+        }
+
+        .slider-sl .slider {
+            overflow: hidden;
+            z-index: 3
+        }
+
+        .slider-sl .sl-inner,
+        .slider-sl .slider {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .slider-sl .sl-inner {
+            z-index: 1
+        }
+
+        .slider-sl .sl-inner .slick-list,
+        .slider-sl .sl-inner .slick-track {
+            height: 100%
+        }
+
+        .slider-sl .sl-inner-arrows {
+            -webkit-box-pack: justify;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            left: 0;
+            padding: 0 10px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 100
+        }
+
+        .slider-sl .sl-item {
+            display: block !important;
+            height: 100%;
+            left: 0;
+            opacity: 1 !important;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 99 !important
+        }
+
+        .slider-sl .sl-item img {
+            opacity: 0
+        }
+
+        .slider-sl .sl-img {
+            background-position: top;
+            background-repeat: no-repeat;
+            -moz-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transition: opacity .3s ease;
+            -o-transition: opacity .3s ease;
+            -moz-transition: opacity .3s ease;
+            transition: opacity .3s ease;
+            width: 100%;
+            z-index: 1
+        }
+
+        .slider-sl .sl-img.mobile {
+            visibility: hidden
+        }
+
+        .slider-sl .sl-img.lazyloaded,
+        .slider-sl .sl-img.lazyloaded+.sl-img.mobile+.bg-shadows {
+            opacity: 1
+        }
+
+        .slider-sl.loaded .default-preloader {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .slider-sl .sl-dots {
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            z-index: 5
+        }
+
+        .slider-sl .sl-dots .slick-dots li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0;
+            height: 30px;
+            margin-right: 15px;
+            position: relative;
+            width: 30px
+        }
+
+        .slider-sl .sl-dots .slick-dots li .slick-dot {
+            background: #991d33;
+            border-color: #991d33;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all .35s ease-in-out;
+            -o-transition: all .35s ease-in-out;
+            -moz-transition: all .35s ease-in-out;
+            transition: all .35s ease-in-out;
+            width: 100%
+        }
+
+        .slider-sl .sl-dots .slick-dots li.slick-active .slick-dot,
+        html.no-touch .slider-sl .sl-dots .slick-dots li:hover .slick-dot {
+            border-bottom: 1px solid #991d33;
+            border-top: 1px solid #991d33
+        }
+
+        .slider-sl .sl-arrows .slick-arrow {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 3
+        }
+
+        .slider-sl .sl-arrows .prev {
+            left: 20px
+        }
+
+        .slider-sl .sl-arrows .next {
+            right: 20px
+        }
+
+        body.noHeader .slider-sl {
+            min-height: 50vh
+        }
+
+        body.noHeader .slider-sl .bg-shadows,
+        body.noHeader .slider-sl .custom-preloader {
+            display: none
+        }
+
+        body.noHeader .slider-sl .slider {
+            background: #991d33;
+            opacity: 1
+        }
+
+        body.noHeader .slider-sl .slider .sl-inner {
+            display: none
+        }
+
+        @media screen and (min-width:768px) {
+            .slider-sl .sl-img {
+                -webkit-transition: -webkit-filter .3s ease;
+                transition: -webkit-filter .3s ease;
+                -o-transition: filter .3s ease;
+                -moz-transition: filter .3s ease;
+                transition: filter .3s ease;
+                transition: filter .3s ease, -webkit-filter .3s ease
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .slider-sl {
+                min-height: 50vh
+            }
+
+            .slider-sl .slider {
+                position: absolute
+            }
+
+            .slider-sl .sl-img {
+                visibility: hidden
+            }
+
+            .slider-sl .sl-img.mobile {
+                visibility: visible
+            }
+
+            .slider-sl .sl-img.mobile.lazyloaded+.bg-shadows {
+                opacity: 1
+            }
+        }
+
+        @media screen and (max-height:350px) {
+            .slider-sl {
+                height: 100%
+            }
+        }
+    </style> 
+</head>
+
+<body class="VisitUs-page secondLvl pageTitle-inquire-online">
+
+    <!-- side images links -->
+    <script>
+        var menuPromos = [{
+            "image": "assets/img/Montessori/01.jpg",
+            "title": "Montessori",
+            "url": "Montessori.html"
+        },
+        {
+            "image": "assets/img/admission/education-day-elements-with-copy-space.jpg",
+            "title": "Admissions Process",
+            "url": "AdmissionProcess.html"
+        },
+        {
+            "image": "assets/img/Daycare/untitled-1.jpg",
+            "title": "DayCare",
+            "url": "DayCare.html"
+        },
+        {
+            "image": "assets/img/slider/sm-slider.jpg",
+            "title": "About Us",
+            "url": "index.html"
+        }];
+    </script>
+    <!-- side images links -->
+    <div class="custom-logo-wrapper">
+        <a href="index.html" class="custom-logo" title="Logo">
+            <img src="./assets/img/logo/logo.png" class="img-fluid">
+        </a>
+    </div>
+    <div class="header">
+        <ul class="header-links  ">
+            <li><a href="inquire-online.html" title="Inquire"><span>Inquire</span></a></li>
+            <li><a href="VisitUs.html" class="current" title="Visit Us"><span>Visit Us</span></a></li>
+            <li><a href="index.html" title="My Cocoon"><span>My Cocoon-A</span></a>
+            </li>
+            <li class="header-links-contact"><a href="#" title="Key Links">Key Links</a></li>
+        </ul>
+        <button class="custom-menu-link open-menu-js" title="Open Menu"> <span class="burger-text">Menu</span>
+            <div class="burger-icon">
+                <div class="burger-mask"></div>
+            </div>
+        </button>
+        <div class="close-popup-js close-button"></div>
+    </div>
+    <div class="media-header mtHeader"><a href="index.html" class="logo-media">Logo</a></div>
+    <div class="custom-menu">
+        <ul>
+            <li><a href="index.html" class="cm-link-open-level cm-link" title="Home"
+                    data-firstchild="true"><span>Home</span></a>
+            <li>
+                <a href="#" class="cm-link-open-level cm-link" title="Our Programme" data-firstchild="true"><span>Our
+                        Programme
+                    </span></a>
+                <ul>
+                    <li><a href="Montessori.html" class="cm-link" title="Montessori" data-firstchild="true"><span>
+                                Montessori</span></a>
+                    <li><a href="DayCare.html" class="cm-link" title="DayCare" data-firstchild="true"><span>
+                                DayCare</span></a>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="  cm-link-open-level cm-link " title="Admission"
+                    data-firstchild="true"><span>Admission
+                    </span></a>
+                <ul>
+                    <li><a href="AdmissionProcess.html" class=" cm-link" title="Admission Process"
+                            data-firstchild="true"><span>
+                                Admission Process</span></a>
+                    <li><a href="ApplyAdmission.html" class=" cm-link" title="DayCare" data-firstchild="true"><span>
+                                Apply For
+                                Admission</span></a>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="  cm-link-open-level cm-link" title="Our Team" data-firstchild="true"><span>Our
+                        Team
+                    </span></a>
+                <ul>
+                    <li><a href="Management.html" class="  cm-link" title="Management" data-firstchild="true"><span>
+                                Management</span></a>
+                </ul>
+            </li>
+            <li>
+                <a href="Events.html" class="cm-link-open-level cm-link" title="Events"
+                    data-firstchild="true"><span>Events </span></a>
+            </li>
+            <li>
+                <a href="Contact.html" class="current cm-link-open-level cm-link" title="Contact"
+                    data-firstchild="true"><span>
+                        Contact Us </span></a>
+            </li>
+        </ul>
+    </div> 
+    <div class="slider-sl">
+        <div class="bg-shadows"></div>
+        <div class="slider">
+            <div class="sl-inner">
+                <div class="sl-item">
+                    <div class="item-container">
+                        <div class="bg-shadows"><span></span></div>
+                        <div class="sl-img lazyload" data-bg="./assets/img/kingsly/header-visit-us.webp"
+                            title="Inquire Online"></div>
+                        <div class="sl-img mobile lazyload" data-bg="./assets/img/kheader-visit-us.webp"
+                            title="Inquire Online">
+                        </div>
+                    </div>
+                </div>
+                 <!-- <img src="./assets/img/kingsly/header-visit-us.webp"   -->
+            </div>
+        </div>
+        <div class="page-title-container">
+            <div class="page-title">
+                <div class="secondLvlCss">
+                    <h1>Visit Us</h1>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-area">
+            <div class="ca-inner clearfix">
+                <div class="cat-tc cat-fixed d-lg-block d-none">
+                    <div class="ca-sidebox-container">
+                        <div class="sidebox sidebox-tree-menu">
+                            <div class="sidebox-inner">
+                                <h3 class="sidebox-title">Admissions</h3>
+                                <div class="tree-menu">
+                                    <div class="tm-inner">
+                                        <ul class="tm-list">
+                                            <li class="tm-item">
+                                                <div class="tm-link-container"><a href="index.html" class="tm-link"
+                                                        title="Why Cocoon">Why Cocoon</a></div>
+                                            </li>
+                                            <li class="tm-item">
+                                                <div class="tm-link-container"><a href="admissions-process.html"
+                                                        class="tm-link" title="Admissions Process">Admissions
+                                                        Process</a></div>
+                                            </li>
+                                            <li class="tm-item">
+                                                <div class="tm-link-container"><a href="VisitUs.html" class="current tm-link"
+                                                        title="Visit Us">Visit Us</a></div>
+                                            </li>
+
+                                            <li class="tm-item">
+                                                <div class="tm-link-container"><a href="inquire-online.html"
+                                                        class="tm-link " title="Inquire Online">Inquire
+                                                        Online</a></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="sidebox sidebox-promos">
+                                    <div class="sidebox-inner">
+                                        <span class="sidebox-title">Explore More</span>
+                                        <div class="sl-promos-sidebar">
+                                            <div class="sl-promos-sidebar-inner">
+                                                <div class="promo-item-sl">
+                                                    <div class="promo-item-inner"><a href="#" target="_self"
+                                                            class="full-link" title="Why Cocoon"></a>
+                                                        <div class="image">
+    
+                                                            <div class="img lazyloaded"
+                                                                data-bg="./assets/img/kingsly/IconWhyKingsley.jpg"
+                                                                title="Why Events"
+                                                                style="background-image: url('./assets/img/kingsly/IconWhyKingsley.jpg');">
+                                                            </div>
+                                                        </div>
+                                                        <div class="plus-icon"><span></span></div><span class="text">Why
+                                                            Cocoon</span>
+                                                    </div>
+                                                </div>
+                                                <div class="promo-item-sl">
+                                                    <div class="promo-item-inner"><a href="#" target="_self"
+                                                            class="full-link" title="Academic Overview"></a>
+                                                        <div class="image">
+                                                            <div class="img lazyloaded"
+                                                                data-bg="./assets/img/kingsly/IconAcademicOverview.jpg"
+                                                                title="Academic Overview"
+                                                                style="background-image: url('./assets/img/kingsly/IconAcademicOverview.jpg');">
+                                                            </div>
+                                                        </div>
+                                                        <div class="plus-icon"><span></span></div><span
+                                                            class="text">Academic
+                                                            Overview</span>
+                                                    </div>
+                                                </div>
+                                                <div class="promo-item-sl">
+                                                    <div class="promo-item-inner"><a href="#" target="_self"
+                                                            class="full-link" title="Visit Us"></a>
+                                                        <div class="image">
+                                                            <div class="img lazyloaded"
+                                                                data-bg="./assets/img/kingsly/IconVisitUs.jpeg"
+                                                                title="Visit Us"
+                                                                style="background-image: url('./assets/img/kingsly/IconVisitUs.jpeg');">
+                                                            </div>
+                                                        </div>
+                                                        <div class="plus-icon"><span></span></div><span class="text">Visit
+                                                            Us</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-tc cat-flexible">
+                    <div class="ca-content">
+                        <div class="content-container">
+                            <div class="secondLvlCss">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            <strong>
+                                            We believe that nothing takes the place of an in-person visit!
+                                             We look forward to meeting you and your family,
+                                             and showing you the exciting learning that happens 
+                                             each and every day at Cocoons.
+                                            </strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12"> 
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-12 my-auto">
+                                                <h3 class="form-title my-auto">UPCOMING EVENTS</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="">Register for an Upcoming Event <span class="text-danger">*</span> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Open House 
+                                                    </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        I'd like to schedule a call with the Admissions Team
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <form action="">
+                                            <div class="row">
+                                                
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="fname"> Child First Name<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="fname" id="fname"
+                                                            placeholder="enter first name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="lname">   Child Last Name<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="lname" id="lname"
+                                                            placeholder="enter last  name" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="gender">Entering Year <span class="text-danger">*</span> </label>
+                                                        <select class="form-select " name="" id="">
+                                                            <option value="" selected disabled>Select gender</option>
+                                                            <option value="1">23-24</option>
+                                                            <option value="female">24-25</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="db"> Child Date of Birth or Expected Date of Birth<span class="text-danger">*</span></label>
+                                                        <input type="date" class="form-control" name="db" id="db"
+                                                            placeholder="enter  date of birth" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-12">
+                                                  
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="second1">
+                                                        <label class="form-check-label" for="second1">
+                                                            I have a second child to add
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="second2" checked>
+                                                        <label class="form-check-label" for="second2">
+                                                            I have a third child to add
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            
+                                            
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="fname"> Parent/Guardian First Name<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="fname" id="fname"
+                                                            placeholder="enter first name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="lname"> Parent/Guardian  Last Name<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="lname" id="lname"
+                                                            placeholder="enter last  name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="Phone">   Phone</label>
+                                                        <input type="number" class="form-control" name="Phone" id="Phone"
+                                                            placeholder="03xxxxx" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="email"> Email</label>
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="enter email" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="fname"> Parent/Guardian 2 First Name <span class="text-danger">(if attending)</span></label>
+                                                        <input type="text" class="form-control" name="fname" id="fname"
+                                                            placeholder="enter first name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 mx-auto">
+                                                    <div class="form-group">
+                                                        <label for="lname"> Parent /Guardian 2 Last Name <span class="text-danger">(if attending)</span></label>
+                                                        <input type="text" class="form-control" name="lname" id="lname"
+                                                            placeholder="enter last  name" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-12 text-end">
+                                                    <button type="submit" class="btn btn-md btn-info">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                                  </div>
+                                  <hr>
+                                   <div class="row">
+                                    <div class="col-12">
+                                        <h2>Admissions Team</h2>
+                                    </div>
+                                   </div>
+                                  <div class="staff-carousel" style="display: block;">
+                                    <div class="sc-header mb-4">
+                                        <div class="secondLvlCss">
+                                            <h3>Profiles</h3>
+                                        </div>
+                                    </div>
+                                    <div class="staff-container-wrapper">
+                                        <div
+                                            class="staff-container   slick-initialized">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-12 text-align" >
+                                                    <div class="slick-slide  " data-bs-toggle="modal"
+                                                    data-bs-target="#modal3">
+                                                    <div>
+                                                        <div class="staff-card js-staffPopup has-bio">
+                                                            <div class="staff-card-inner">
+                                                                <div class="staff-card-image">
+                                                                    <div class="img" role="img"
+                                                                        style="background-image: url('./assets/img/kingsly/Hofherr_Tara.jpg')">
+                                                                    </div>
+                                                                    <div class="plus-icon"><span></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="staff-card-content">
+                                                                    <div class="scc-inner">
+                                                                        <div class="scc-name">Tara
+                                                                            Hofherr</div>
+                                                                        <div class="scc-role"><span
+                                                                                class="txt">Director
+                                                                            </span><span
+                                                                                class="arrow"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12 text-align">
+                                        <div class="slick-slide  " data-bs-toggle="modal"
+                                            data-bs-target="#modal4">
+                                            <div>
+                                                <div class="staff-card js-staffPopup has-bio">
+                                                    <div class="staff-card-inner">
+                                                        <div class="staff-card-image">
+                                                            <div class="img" role="img"
+                                                                style="background-image: url('./assets/img/kingsly/Perlow_Julie.jpg')">
+                                                            </div>
+                                                            <div class="plus-icon"><span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="staff-card-content">
+                                                            <div class="scc-inner">
+                                                                <div class="scc-name">Julie
+                                                                    Perlow</div>
+                                                                <div class="scc-role"><span
+                                                                        class="txt">Admissions Officer
+                                                                    </span><span
+                                                                        class="arrow"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                     
+                                    </div>
+
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer contact-overlay">
+        <div class="ft__wrapper top">
+            <div class="ft__inner clearfix">
+                <div class="ft__col-title">
+                    <h2 class="title">Your Moment Awaits</h2>
+                    <ul class="ft__buttons">
+                        <li><a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a></li>
+                        <li><a href="VisitUs.html" title="Visit Us" class="current btn-g footer-button">Visit Us</a></li>
+                        <li><a href="index.html" title="My Cocoon" class="btn-g footer-button">My Cocoon</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft__col-info">
+                    <div class="address-content-style">
+                        <div class="address-inner">
+                            <h4>Address</h4>
+                            <div class="info-group address"><span class="icon"></span>
+                                <div class="text">
+                                    46-CP & Berar Block -7&8,<br> Ameer Khusro Road, Karsaz, Karachi.
+                                    <a href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
+                                        title="Get Directions" target="_blank">Get directions</a>
+                                </div>
+                            </div>
+                            <div class="info-group phone"><span class="icon"></span>
+                                <div class="text">Tel: <a href="tel:021-34312233" title="Call Us"
+                                        target="_blank">021-34312233 </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-links-content">
+                        <h4>Key Links</h4>
+                        <ul class="key-links">
+                            <li><a href="#" title="My Cocoon Online Portal">Cocoon Online Portal</a>
+                            <li><a href="#" title="Tuition &amp; Affordability">Tuition &amp; Affordability</a>
+                            <li><a href="#" title="Calendar">Calendar</a>
+                            <li><a href="#" title="Giving Day Site">Giving Day Site</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft__wrapper bottom">
+            <div class="ft__inner">
+                <div class="ft-credits clearfix hide-mobile">
+                    <div class="ft__col-left">
+                        <div class="ft-author">
+                            <p class="copyright">
+                                <a href="#" title="#" target="">#SchoolWebsite Design</a> by
+                                <a href="#" target="_blank"> Interactive Schools </a>
+                            </p>
+                        </div>
+                        <ul class="std-links">
+                            <li><a href="#" title="sitemap">Sitemap</a></li>
+                            <li><a href="#" title="Terms &amp; Privacy">Terms & Privacy</a></li>
+                            <li><a href="#" title="Cocoon" target="_blank">Cocoon</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft__col-right">
+                        <div class="ft-logos">
+                            <div class="logo" style="display:none">
+                                <a href="#" target="_blank" title="NICHE">
+                                    <img style="display:none" class="lazyload"
+                                        data-src="/Images/assets/footer-logos/niche.png" alt="NICHE">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="#" target="_blank" title="aisne">
+                                    <img class="lazyload" data-src="/Images/assets/footer-logos/Aisne.svg"
+                                        alt="aisne" />
+                                </a>
+                            </div>
+                            <div class="logo"><a href="#" target="_blank" title="AMS"> <img class="lazyload"
+                                        data-src="/Images/assets/footer-logos/AMS.svg" alt="AMS"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft__wrapper top">
+            <div class="ft__inner clearfix">
+                <div class="ft__col-title">
+                    <h2 class="title">Your Moment Awaits</h2>
+                    <ul class="ft__buttons">
+                        <li><a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a></li>
+                        <li><a href="VisitUs.html" title="Visit Us" class="current btn-g footer-button">Visit Us</a></li>
+                        <li><a href="index.html" title="My Cocoon" class="btn-g footer-button">Cocoon</a></li>
+                    </ul>
+                </div>
+                <div class="ft__col-info">
+                    <div class="address-content-style">
+                        <div class="address-inner">
+                            <h4>Address</h4>
+                            <div class="info-group address"><span class="icon"></span>
+                                <div class="text">46-CP & Berar Block -7&8, <br>
+                                    Ameer Khusro Road, Karsaz, Karachi. <a
+                                        href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
+                                        title="Get Directions" target="_blank">Get directions</a></div>
+                            </div>
+                            <div class="info-group phone"><span class="icon"></span>
+                                <div class="text">Tel: <a href="tel:021-34312233" title="Call us" target="_blank">
+                                        021-34312233</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="ft__wrapper bottom">
+            <div class="ft__inner">
+                <div class="ft-credits clearfix hide-mobile">
+                    <div class="ft__col-left">
+                        <div class="ft-author">
+                            <div class="copyright">
+                                <p> Design by <b>S.Creation</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="go-top go-top-js"><i></i></div>
+
+
+    <!-- Modal -->
+    <!-- -----------modal modal -->
+    <div class="modal right fade" id="modal3" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header p-0 my-auto">
+                    <div class="row w-100">
+                        <div class="col-3 my-auto">
+                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h4 class="my-auto">Profiles</h4>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-body space-modal">
+<div class="row">
+    <div class="col-12 text-center">
+        <div class="card">
+            <div class="card-body">
+                <div class=" ">
+                    <div class="mediaPopup__singleImage isPortrait">
+                        <img src="./assets/img/kingsly/Hofherr_Tara.jpg" class="img-fluid space-image">
+                    </div>
+                </div>
+                <figcaption class=" ">
+                    <div class="secondLvlCss">
+                         
+                        <p class="isTitle featuredParagraph">Tara
+                            Hofherr  </p>
+                        <p class="isStaffRole"><span> Director </span></p>
+                        <p class="isEmail"><a href="">Hofherr@kingsley.org</a></p> 
+                        <div class="mediaPopup__extraDescWrapper">
+                            <p> B.S. Elementary Education; M.Ed Integrated Curriculum with Focus in Educational Leadership; NBCT Exceptional Needs Specialist </p>
+                        </div>
+                    </div>
+                </figcaption>
+            </div>
+        </div>
+    </div>
+</div>
+                    
+
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal right fade" id="modal4" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header p-0 my-auto">
+                    <div class="row w-100">
+                        <div class="col-3 my-auto">
+                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                        </div>
+                        <div class="col-9 my-auto">
+                            <h4 class="my-auto">Profiles</h4>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-body space-modal">
+<div class="row">
+    <div class="col-12 text-center">
+        <div class="card">
+            <div class="card-body">
+                <div class=" ">
+                    <div class="mediaPopup__singleImage isPortrait">
+                        <img src="./assets/img/kingsly/Perlow_Julie.jpg" class="img-fluid space-image">
+                    </div>
+                </div>
+                <figcaption class=" ">
+                    <div class="secondLvlCss">
+                         
+                        <p class="isTitle featuredParagraph">Julie Perlow</p>
+                        <p class="isStaffRole"><span> Admissions Officer</span></p>
+                        <p class="isEmail"><a href="">jPerlow@kingsley.org</a></p> 
+                        <div class="mediaPopup__extraDescWrapper">
+                            <p> Julie has a strong background in social-emotional learning and child development, with over
+                                 twenty-five years of experience in educational settings. As a licensed social worker, Julie prioritizes the wellness and safety of children in schools through relationship 
+                                building, proactive communication, and thoughtful responsiveness regarding student life, school policies, and programs.</p>
+                        </div>
+                    </div>
+                </figcaption>
+            </div>
+        </div>
+    </div>
+</div>
+                    
+
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/js/global.output0833.js" type="ed01f72a5966ea32cd89b3ba-text/javascript"></script>
+    <script defer src="./assets/js/Homepage.output4565.js" type="ed01f72a5966ea32cd89b3ba-text/javascript"></script>
+    <script src="./assets/js/rocket-loader.min.js" data-cf-settings="ed01f72a5966ea32cd89b3ba-|49" defer></script>
+
+</body>
+
+</html>
