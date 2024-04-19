@@ -1,0 +1,298 @@
+ .slider-sl {
+            -webkit-box-align: baseline;
+            -moz-box-align: baseline;
+            -ms-flex-align: baseline;
+            -webkit-align-items: baseline;
+            align-items: baseline;
+            background: #c41e3a;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 90vh;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows {
+            display: block;
+            height: 100%;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows:after,
+        .slider-sl .bg-shadows:before {
+            content: "";
+            left: 0;
+            opacity: .28;
+            position: absolute;
+            width: 100%;
+            z-index: 4
+        }
+
+        .slider-sl .bg-shadows:before {
+            height: 60%;
+            top: 0
+        }
+
+        .slider-sl .bg-shadows:after,
+        .slider-sl .bg-shadows:before {
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(84, 84, 84, 0)));
+            background: -webkit-linear-gradient(#000, rgba(84, 84, 84, 0));
+            background: -moz-linear-gradient(#000 0, rgba(84, 84, 84, 0) 100%);
+            background: -o-linear-gradient(#000 0, rgba(84, 84, 84, 0) 100%);
+            background: linear-gradient(#000, rgba(84, 84, 84, 0))
+        }
+
+        .slider-sl .bg-shadows:after {
+            bottom: 0;
+            height: 40%;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        @media screen and (max-width:767px) {
+            .slider-sl .bg-shadows {
+                display: none
+            }
+        }
+
+        .slider-sl .slider {
+            overflow: hidden;
+            z-index: 3
+        }
+
+        .slider-sl .sl-inner,
+        .slider-sl .slider {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .slider-sl .sl-inner {
+            z-index: 1
+        }
+
+        .slider-sl .sl-inner .slick-list,
+        .slider-sl .sl-inner .slick-track {
+            height: 100%
+        }
+
+        .slider-sl .sl-inner-arrows {
+            -webkit-box-pack: justify;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            left: 0;
+            padding: 0 10px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 100
+        }
+
+        .slider-sl .sl-item {
+            display: block !important;
+            height: 100%;
+            left: 0;
+            opacity: 1 !important;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 99 !important
+        }
+
+        .slider-sl .sl-item img {
+            opacity: 0
+        }
+
+        .slider-sl .sl-img {
+            background-position: top;
+            background-repeat: no-repeat;
+            -moz-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transition: opacity .3s ease;
+            -o-transition: opacity .3s ease;
+            -moz-transition: opacity .3s ease;
+            transition: opacity .3s ease;
+            width: 100%;
+            z-index: 1
+        }
+
+        .slider-sl .sl-img.mobile {
+            visibility: hidden
+        }
+
+        .slider-sl .sl-img.lazyloaded,
+        .slider-sl .sl-img.lazyloaded+.sl-img.mobile+.bg-shadows {
+            opacity: 1
+        }
+
+        .slider-sl.loaded .default-preloader {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .slider-sl .sl-dots {
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            z-index: 5
+        }
+
+        .slider-sl .sl-dots .slick-dots li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0;
+            height: 30px;
+            margin-right: 15px;
+            position: relative;
+            width: 30px
+        }
+
+        .slider-sl .sl-dots .slick-dots li .slick-dot {
+            background: #991d33;
+            border-color: #991d33;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all .35s ease-in-out;
+            -o-transition: all .35s ease-in-out;
+            -moz-transition: all .35s ease-in-out;
+            transition: all .35s ease-in-out;
+            width: 100%
+        }
+
+        .slider-sl .sl-dots .slick-dots li.slick-active .slick-dot,
+        html.no-touch .slider-sl .sl-dots .slick-dots li:hover .slick-dot {
+            border-bottom: 1px solid #991d33;
+            border-top: 1px solid #991d33
+        }
+
+        .slider-sl .sl-arrows .slick-arrow {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 3
+        }
+
+        .slider-sl .sl-arrows .prev {
+            left: 20px
+        }
+
+        .slider-sl .sl-arrows .next {
+            right: 20px
+        }
+
+        body.noHeader .slider-sl {
+            min-height: 50vh
+        }
+
+        body.noHeader .slider-sl .bg-shadows,
+        body.noHeader .slider-sl .custom-preloader {
+            display: none
+        }
+
+        body.noHeader .slider-sl .slider {
+            background: #991d33;
+            opacity: 1
+        }
+
+        body.noHeader .slider-sl .slider .sl-inner {
+            display: none
+        }
+
+        @media screen and (min-width:768px) {
+           
+            .slider-sl .sl-img {
+                -webkit-transition: -webkit-filter .3s ease;
+                transition: -webkit-filter .3s ease;
+                -o-transition: filter .3s ease;
+                -moz-transition: filter .3s ease;
+                transition: filter .3s ease;
+                transition: filter .3s ease, -webkit-filter .3s ease
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .contentStyles h3, .secondLvlCss h3 {
+                font-size: 20px; 
+            }
+            .VisitUs-page .page-title-container:before { 
+                height: 100px; 
+            }
+            .page-title-container { 
+                padding: 150px 20px 120px !important; 
+            }
+            .secondLvlCss h1 {
+                color: #ffffff;
+              
+            }
+            .slider-sl {
+                min-height: 50vh
+            }
+
+            .slider-sl .slider {
+                position: absolute
+            }
+
+            .slider-sl .sl-img {
+                visibility: hidden
+            }
+
+            .slider-sl .sl-img.mobile {
+                visibility: visible
+            }
+
+            .slider-sl .sl-img.mobile.lazyloaded+.bg-shadows {
+                opacity: 1
+            }
+        }
+
+        @media screen and (max-height:350px) {
+            .slider-sl {
+                height: 100%
+            }
+        }

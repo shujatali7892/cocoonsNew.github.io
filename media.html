@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport">
+    <meta name="viewport" content=" height=device-height, initial-scale=1 , maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
@@ -45,7 +45,7 @@
             "url": "AdmissionProcess.html"
         },
         {
-            "image": "assets/img/Daycare/untitled-1.jpg",
+            "image": "assets/img/Daycare/daycare1.png",
             "title": "DayCare",
             "url": "DayCare.html"
         },
@@ -62,25 +62,74 @@
         </a>
     </div>
     <div class="header">
-        <ul class="header-links  ">
-            <li><a href="inquire-online.html" title="Inquire"><span>Inquire</span></a></li>
-            <li><a href="VisitUs.html" title="Visit Us"><span>Visit Us</span></a></li>
-            <li><a href="index.html" title="My Cocoon"><span>My Cocoon-A</span></a>
+        <ul class="header-links">
+            <li>
+              <a href="index.html" class="" title="About Us" data-firstchild="true"><span>About Us</span></a>
             </li>
-            <li class="header-links-contact"><a href="#" title="Key Links">Key Links</a></li>
-        </ul>
-        <button class="custom-menu-link open-menu-js" title="Open Menu"> <span class="burger-text">Menu</span>
+      
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" title="Our Programme" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Our Programme </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="Montessori.html" class="dropdown-item" title="Montessori" data-firstchild="true"><span>
+                      Montessori</span></a>
+                </li>
+                <li>
+                  <a href="DayCare.html" class="dropdown-item" title="DayCare" data-firstchild="true"><span>
+                      DayCare</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle  " title="Admission" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Admission</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="AdmissionProcess.html" class="dropdown-item  " title="Admission Process" data-firstchild="true"><span>
+                      Admission Process</span></a>
+                </li>
+                <li>
+                  <a href="ApplyAdmission.html" class="dropdown-item" title="ApplyAdmission " data-firstchild="true"><span> Apply For
+                      Admission</span></a>
+                </li>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" title="Our Team " role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Our Team </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="Management.html" class="dropdown-item" title="Management" data-firstchild="true"><span>
+                      Management</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="Events.html" class="" title="Events" data-firstchild="true"><span>Events </span></a>
+            </li>
+            <li>
+              <a href="Contact.html" class="" title="Contact" data-firstchild="true"><span>Contact Us</span></a>
+            </li>
+            <li class="header-links-contact">
+              <a href="#" title="Key Links">Key Links</a>
+            </li>
+          </ul>
+          <button class="custom-menu-link open-menu-js" title="Open Menu">
+            <span class="burger-text">
+              <img src="./assets/img/logo/logo.png" class="img-fluid" /></span>
             <div class="burger-icon">
-                <div class="burger-mask"></div>
+              <div class="burger-mask"></div>
             </div>
-        </button>
+          </button>
         <div class="close-popup-js close-button"></div>
     </div>
     <div class="media-header mtHeader"><a href="index.html" class="logo-media">Logo</a></div>
     <div class="custom-menu">
         <ul>
-            <li><a href="index.html" class="cm-link-open-level cm-link" title="Home"
-                    data-firstchild="true"><span>Home</span></a>
+            <li><a href="index.html" class="cm-link-open-level cm-link" title="about-us"
+                    data-firstchild="true"><span>About Us</span></a>
             <li>
                 <a href="#" class="cm-link-open-level cm-link" title="Our Programme" data-firstchild="true"><span>Our
                         Programme
@@ -93,7 +142,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#" class="current cm-link-open-level cm-link " title="Admission"
+                <a href="#" class="  cm-link-open-level cm-link " title="Admission"
                     data-firstchild="true"><span>Admission
                     </span></a>
                 <ul>
@@ -106,11 +155,11 @@
                 </ul>
             </li>
             <li>
-                <a href="#" class="current cm-link-open-level cm-link" title="Our Team" data-firstchild="true"><span>Our
+                <a href="#" class="  cm-link-open-level cm-link" title="Our Team" data-firstchild="true"><span>Our
                         Team
                     </span></a>
                 <ul>
-                    <li><a href="Management.html" class="current cm-link" title="Management"
+                    <li><a href="Management.html" class="  cm-link" title="Management"
                             data-firstchild="true"><span>
                                 Management</span></a>
                 </ul>
@@ -129,24 +178,17 @@
 
     <main>
         <div class="hero-area">
-            <div class="row h-75 mt-auto">
-                <div class="col-12 text-center mt-auto">
-                    <h1 class="mt-auto text-light">Events gallery</h1>
+            <div class="row page-title">
+                <div class="col-12 text-center secondLvlCss">
+                    <h1 class="mt-auto  my-text">Events gallery</h1>
                 </div>
             </div>
             <p class="descriptive-text d-none">Lorem ipsum dolor sit amet consectetur elit. Placeat veritatis excepturi
                 magni
                 provident!
-            <div class="goDown"></div>
+            <!-- <div class="goDown"></div> -->
         </div>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-                </div>
-        </section>
+ 
         <section class=" ">
             <div class="container-fluid ">
                 <div class="row">
@@ -882,89 +924,96 @@
 
   
     </main>
-
-
-
-    <div class="footer contact-overlay">
+    <div class="footer contact-overlay"  >
         <div class="ft__wrapper top">
-            <div class="ft__inner clearfix">
-                <div class="ft__col-title">
-                    <h2 class="title">Your Moment Awaits</h2>
-                    <ul class="ft__buttons">
-                        <li><a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a></li>
-                        <li><a href="VisitUs.html" title="Visit Us" class="btn-g footer-button">Visit Us</a></li>
-                        <li><a href="index.html" title="My Cocoon" class="btn-g footer-button">My Cocoon</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ft__col-info">
-                    <div class="address-content-style">
-                        <div class="address-inner">
-                            <h4>Address</h4>
-                            <div class="info-group address"><span class="icon"></span>
-                                <div class="text">
-                                    46-CP & Berar Block -7&8,<br> Ameer Khusro Road, Karsaz, Karachi.
-                                    <a href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
-                                        title="Get Directions" target="_blank">Get directions</a>
-                                </div>
-                            </div>
-                            <div class="info-group phone"><span class="icon"></span>
-                                <div class="text">Tel: <a href="tel:021-34312233" title="Call Us"
-                                        target="_blank">021-34312233 </a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="key-links-content">
-                        <h4>Key Links</h4>
-                        <ul class="key-links">
-                            <li><a href="#" title="My Cocoon Online Portal">Cocoon Online Portal</a>
-                            <li><a href="#" title="Tuition &amp; Affordability">Tuition &amp; Affordability</a>
-                            <li><a href="#" title="Calendar">Calendar</a>
-                            <li><a href="#" title="Giving Day Site">Giving Day Site</a>
-                        </ul>
-                    </div>
-                </div>
+          <div class="ft__inner clearfix">
+            <div class="ft__col-title">
+              <h2 class="title">Your Moment Awaits</h2>
+              <ul class="ft__buttons">
+                <li>
+                  <a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a>
+                </li>
+                <li>
+                  <a href="VisitUs.html" title="Visit Us" class="btn-g footer-button">Visit Us</a>
+                </li>
+                <li>
+                  <a href="index.html" title="My Cocoon" class="btn-g footer-button">Cocoon</a>
+                </li>
+              </ul>
             </div>
+            <div class="ft__col-info">
+              <div class="address-content-style">
+                <div class="address-inner">
+                  <h4>Address</h4>
+                  <div class="info-group address">
+                    <span class="icon"></span>
+                    <div class="text">
+                      46-CP & Berar Block -7&8, <br />
+                      Ameer Khusro Road, Karsaz, Karachi.
+                      <a href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
+                        title="Get Directions" target="_blank">Get directions</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Tel: &nbsp;
+                      <a href="tel:021-34312233" title="Call us" target="_blank">
+                        021-34312233</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Mob: &nbsp;
+                      <a href="tel:03011022777" title="Call us" target="_blank">
+                        03011022777</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Email: &nbsp;
+                      <a href="mailto:info@cocoonacademy.net">
+                        info@cocoonacademy.net</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Facebook: &nbsp;
+                      <a href="https://www.facebook.com/CocoonSafeHeaven?mibextid=2JQ9oc" title="facebook">Cocoon
+                        Facebook</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Instagram: &nbsp;
+                      <a href="https://www.instagram.com/cocoon.academy?igsh=MWw0amVjcHQ3M2dkZg==" title="Instagram">Cocoon
+                        Instagram
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="ft__wrapper bottom">
-            <div class="ft__inner">
-                <div class="ft-credits clearfix hide-mobile">
-                    <div class="ft__col-left">
-                        <div class="ft-author">
-                            <p class="copyright">
-                                <a href="#" title="#" target="">#SchoolWebsite Design</a> by
-                                <a href="#" target="_blank"> Interactive Schools </a>
-                            </p>
-                        </div>
-                        <ul class="std-links">
-                            <li><a href="#" title="sitemap">Sitemap</a></li>
-                            <li><a href="#" title="Terms &amp; Privacy">Terms & Privacy</a></li>
-                            <li><a href="#" title="Cocoon" target="_blank">Cocoon</a></li>
-                        </ul>
-                    </div>
-                    <div class="ft__col-right">
-                        <div class="ft-logos">
-                            <div class="logo" style="display:none">
-                                <a href="#" target="_blank" title="NICHE">
-                                    <img style="display:none" class="lazyload"
-                                        data-src="/Images/assets/footer-logos/niche.png" alt="NICHE">
-                                </a>
-                            </div>
-                            <div class="logo">
-                                <a href="#" target="_blank" title="aisne">
-                                    <img class="lazyload" data-src="/Images/assets/footer-logos/Aisne.svg"
-                                        alt="aisne" />
-                                </a>
-                            </div>
-                            <div class="logo"><a href="#" target="_blank" title="AMS"> <img class="lazyload"
-                                        data-src="/Images/assets/footer-logos/AMS.svg" alt="AMS"> </a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="ft__inner">
+            <div class="ft-credits clearfix hide-mobile">
+              <div class="ft__col-left">
+                <div class="ft-author">
+                  <div class="copyright">
+                    <p>Design by <b>S.Creation</b></p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="footer">
         <div class="ft__wrapper top">
             <div class="ft__inner clearfix">
@@ -987,8 +1036,31 @@
                                         title="Get Directions" target="_blank">Get directions</a></div>
                             </div>
                             <div class="info-group phone"><span class="icon"></span>
-                                <div class="text">Tel: <a href="tel:021-34312233" title="Call us" target="_blank">
+                                <div class="text">Tel: &nbsp; <a href="tel:021-34312233" title="Call us" target="_blank">
                                         021-34312233</a></div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Mob: &nbsp; <a href="tel:03011022777" title="Call us" target="_blank">
+                                    03011022777</a></div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Email: &nbsp; 
+                                    <a href="mailto:info@cocoonacademy.net"> 
+                                        info@cocoonacademy.net</a>
+
+                                </div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Facebook: &nbsp; 
+                                    <a href="https://www.facebook.com/CocoonSafeHeaven?mibextid=2JQ9oc" title="facebook">Cocoon  Facebook</a>
+
+                                </div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Instagram: &nbsp; 
+                                    <a href="https://www.instagram.com/cocoon.academy?igsh=MWw0amVjcHQ3M2dkZg==" title="Instagram" >Cocoon Instagram </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport">
+    <meta name="viewport" content=" height=device-height, initial-scale=1 , maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
@@ -45,7 +45,7 @@
             "url": "AdmissionProcess.html"
         },
         {
-            "image": "assets/img/Daycare/untitled-1.jpg",
+            "image": "assets/img/Daycare/daycare1.png",
             "title": "DayCare",
             "url": "DayCare.html"
         },
@@ -62,25 +62,74 @@
         </a>
     </div>
     <div class="header">
-        <ul class="header-links  ">
-            <li><a href="inquire-online.html" title="Inquire"><span>Inquire</span></a></li>
-            <li><a href="VisitUs.html" title="Visit Us"><span>Visit Us</span></a></li>
-            <li><a href="index.html" title="My Cocoon"><span>My Cocoon-A</span></a>
+        <ul class="header-links">
+            <li>
+              <a href="index.html" class="" title="About Us" data-firstchild="true"><span>About Us</span></a>
             </li>
-            <li class="header-links-contact"><a href="#" title="Key Links">Key Links</a></li>
-        </ul>
-        <button class="custom-menu-link open-menu-js" title="Open Menu"> <span class="burger-text">Menu</span>
+      
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" title="Our Programme" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Our Programme </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="Montessori.html" class="dropdown-item" title="Montessori" data-firstchild="true"><span>
+                      Montessori</span></a>
+                </li>
+                <li>
+                  <a href="DayCare.html" class="dropdown-item" title="DayCare" data-firstchild="true"><span>
+                      DayCare</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle  " title="Admission" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Admission</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="AdmissionProcess.html" class="dropdown-item  " title="Admission Process" data-firstchild="true"><span>
+                      Admission Process</span></a>
+                </li>
+                <li>
+                  <a href="ApplyAdmission.html" class="dropdown-item" title="ApplyAdmission " data-firstchild="true"><span> Apply For
+                      Admission</span></a>
+                </li>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" title="Our Team " role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><span>Our Team </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="Management.html" class="dropdown-item" title="Management" data-firstchild="true"><span>
+                      Management</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="Events.html" class="current" title="Events  " data-firstchild="true"><span>Events </span></a>
+            </li>
+            <li>
+              <a href="Contact.html" class="" title="Contact" data-firstchild="true"><span>Contact Us</span></a>
+            </li>
+            <li class="header-links-contact">
+              <a href="#" title="Key Links">Key Links</a>
+            </li>
+          </ul>
+          <button class="custom-menu-link open-menu-js" title="Open Menu">
+            <span class="burger-text">
+              <img src="./assets/img/logo/logo.png" class="img-fluid" /></span>
             <div class="burger-icon">
-                <div class="burger-mask"></div>
+              <div class="burger-mask"></div>
             </div>
-        </button>
+          </button>
         <div class="close-popup-js close-button"></div>
     </div>
     <div class="media-header mtHeader"><a href="index.html" class="logo-media">Logo</a></div>
     <div class="custom-menu">
         <ul>
-            <li><a href="index.html" class="cm-link-open-level cm-link" title="Home"
-                    data-firstchild="true"><span>Home</span></a>
+            <li><a href="index.html" class="cm-link-open-level cm-link" title="about-us"
+                    data-firstchild="true"><span>About Us</span></a>
             <li>
                 <a href="#" class="cm-link-open-level cm-link" title="Our Programme" data-firstchild="true"><span>Our
                         Programme
@@ -93,7 +142,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#" class="current cm-link-open-level cm-link " title="Admission"
+                <a href="#" class="  cm-link-open-level cm-link " title="Admission"
                     data-firstchild="true"><span>Admission
                     </span></a>
                 <ul>
@@ -106,17 +155,17 @@
                 </ul>
             </li>
             <li>
-                <a href="#" class="current cm-link-open-level cm-link" title="Our Team" data-firstchild="true"><span>Our
+                <a href="#" class=" cm-link-open-level cm-link" title="Our Team" data-firstchild="true"><span>Our
                         Team
                     </span></a>
                 <ul>
-                    <li><a href="Management.html" class="current cm-link" title="Management"
+                    <li><a href="Management.html" class="  cm-link" title="Management"
                             data-firstchild="true"><span>
                                 Management</span></a>
                 </ul>
             </li>
             <li>
-                <a href="Events.html" class="cm-link-open-level cm-link" title="Events"
+                <a href="Events.html" class="current cm-link-open-level cm-link" title="Events"
                     data-firstchild="true"><span>Events </span></a>
             </li>
             <li>
@@ -134,9 +183,7 @@
                     <h1 class="mt-auto text-light">Events</h1>
                 </div>
             </div>
-            <p class="descriptive-text d-none">Lorem ipsum dolor sit amet consectetur elit. Placeat veritatis excepturi
-                magni
-                provident!
+            <p class="descriptive-text d-none"> 
             <div class="goDown"></div>
         </div>
 
@@ -168,7 +215,7 @@
                                     <div class="sl-promos-sidebar">
                                         <div class="sl-promos-sidebar-inner">
                                             <div class="promo-item-sl">
-                                                <div class="promo-item-inner"><a href="#" target="_self"
+                                                <div class="promo-item-inner"><a href="index.html" target="_self"
                                                         class="full-link" title="Why Cocoon"></a>
                                                     <div class="image">
 
@@ -183,7 +230,7 @@
                                                 </div>
                                             </div>
                                             <div class="promo-item-sl">
-                                                <div class="promo-item-inner"><a href="#" target="_self"
+                                                <div class="promo-item-inner"><a href="index.html" target="_self"
                                                         class="full-link" title="Academic Overview"></a>
                                                     <div class="image">
                                                         <div class="img lazyloaded"
@@ -198,13 +245,13 @@
                                                 </div>
                                             </div>
                                             <div class="promo-item-sl">
-                                                <div class="promo-item-inner"><a href="#" target="_self"
+                                                <div class="promo-item-inner"><a href="VisitUs.html" target="_self"
                                                         class="full-link" title="Visit Us"></a>
                                                     <div class="image">
                                                         <div class="img lazyloaded"
                                                             data-bg="./assets/img/kingsly/IconVisitUs.jpeg"
                                                             title="Visit Us"
-                                                            style="background-image: url('./assets/img/kingsly/IconVisitUs.jpeg');">
+                                                            style="background-image: url('./assets/img/kingsly/IconVisitUs.jpg');">
                                                         </div>
                                                     </div>
                                                     <div class="plus-icon"><span></span></div><span class="text">Visit
@@ -221,12 +268,9 @@
                     <div class="col-md-9 col-12">
                         <div class="row">
                             <div class="col-12">
-                                <p class="featured-paragraph">
-                                    <strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
-                                        rem?</strong> The Board is responsible for
-                                    the long-term strategic and financial health of the school and delegates daily
-                                    operating authority to the Head of School.
-                                </p>
+                                <p > The Cocoon community of students, families, faculty, staff, 
+                                    alumni, and friends comes together in a variety of meaningful and fun ways to support our mission and celebrate our shared purpose. To learn more or volunteer to help, contact 
+                                    <a href="mailto:info@cocoonacademy.net" class="textbold">Cocoon-A Safe Heaven </a>.</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -552,7 +596,7 @@
                                                                                     <div class="img lazyloaded"
                                                                                         data-bg="./assets/img/kingsly/1px.jpg"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/1px.jpg');">
+                                                                                        style="background-image: url('./assets/img/Ramadan/004.jpg');">
                                                                                     </div><i
                                                                                         class="fa fa-facebook "></i>
                                                                                     <div class="plus-icon"><span></span>
@@ -562,34 +606,13 @@
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                facebook</div>
-                                                                                            <div class="scc-date">Apr 05
-                                                                                            </div>
+                                                                                                Ramadan Insights</div>
+                                                                                           
                                                                                         </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">Busy
-                                                                                                    bees 🐝 at Fairfield
-                                                                                                    this morning! 💕🌿
-                                                                                                    P.S. We’re still
-                                                                                                    beaming from
-                                                                                                    yesterday’s
-                                                                                                    incredible Giving
-                                                                                                    Day! 🦁🏁 If you
-                                                                                                    made a gift—THANK
-                                                                                                    YOU! Everything our
-                                                                                                    students experience
-                                                                                                    and accomplish at
-                                                                                                    is fueled
-                                                                                                    by a strong Annual
-                                                                                                    Fund. We are SO
-                                                                                                    grateful for your
-                                                                                                    support. 🫶
-
-
-                                                                                                </span>
-                                                                                            </div>
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -608,7 +631,7 @@
                                                                                     <div class="img lazyloaded"
                                                                                         data-bg="./assets/img/kingsly/2px.jpg"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/2px.jpg');">
+                                                                                        style="background-image: url('./assets/img/woewm/2.jpg');">
                                                                                     </div>
                                                                                     <div class="plus-icon"><span></span>
                                                                                     </div>
@@ -617,35 +640,13 @@
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                instagram</div>
-                                                                                            <div class="scc-date">Apr 05
-                                                                                            </div>
+                                                                                                Women's Day</div>
+                                                                                             
                                                                                         </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">Busy
-                                                                                                    bees 🐝 at Fairfield
-                                                                                                    this morning! 💕🌿🎶
-                                                                                                    Swipe to the end to
-                                                                                                    hear a Mr. Brian
-                                                                                                    sing-along. PS.
-                                                                                                    We’re still beaming
-                                                                                                    from yesterday’s
-                                                                                                    incredible Giving
-                                                                                                    Day! 🦁🏁If you made
-                                                                                                    a gift—THANK YOU!
-                                                                                                    Everything our
-                                                                                                    students experience
-                                                                                                    and accomplish at
-                                                                                                    is fueled
-                                                                                                    by a strong Annual
-                                                                                                    Fund. We are SO
-                                                                                                    grateful for your
-                                                                                                    support. 🫶
-
-
-                                                                                            </div>
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -661,9 +662,9 @@
                                                                                 <div
                                                                                     class="story-card-image mtStoryItem__img">
                                                                                     <div class="img lazyloaded"
-                                                                                        data-bg="./assets/img/kingsly/3px.jpg"
+                                                                                        data-bg="./assets/img/"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/3px.jpg');">
+                                                                                        style="background-image: url('./assets/img/childrenday/14.jpg');">
                                                                                     </div>
                                                                                     <div class="plus-icon"><span></span>
                                                                                     </div>
@@ -672,24 +673,13 @@
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                twitter</div>
-                                                                                            <div class="scc-date">Apr 26
-                                                                                            </div>
+                                                                                                Children Day</div>
+                                                                                           
                                                                                         </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">LAST
-                                                                                                    CHANCE TO GIVE ON
-                                                                                                    GIVING DAY! 🌼 Let's
-                                                                                                    help the Annual Fund
-                                                                                                    BLOOM to $1M—making
-                                                                                                    a difference in each
-                                                                                                    and every classroom.
-                                                                                                    Thank you SO MUCH
-                                                                                                    for your support! ❤️
-                                                                                                </span>
-                                                                                            </div>
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -705,9 +695,9 @@
                                                                                 <div
                                                                                     class="story-card-image mtStoryItem__img">
                                                                                     <div class="img lazyloaded"
-                                                                                        data-bg="./assets/img/kingsly/4px.jpg"
+                                                                                        data-bg="./assets/img/Animal/2.jpg"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/4px.jpg');">
+                                                                                        style="background-image: url('./assets/img/Animal/2.jpg');">
                                                                                     </div><i
                                                                                         class="fa fa-facebook "></i>
                                                                                     <div class="plus-icon"><span></span>
@@ -717,42 +707,20 @@
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                facebook</div>
-                                                                                            <div class="scc-date">Apr 05
-                                                                                            </div>
+                                                                                                Animal Kingdom</div>
+                                                                                           
                                                                                         </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">Busy
-                                                                                                    bees 🐝 at Fairfield
-                                                                                                    this morning! 💕🌿
-                                                                                                    P.S. We’re still
-                                                                                                    beaming from
-                                                                                                    yesterday’s
-                                                                                                    incredible Giving
-                                                                                                    Day! 🦁🏁 If you
-                                                                                                    made a gift—THANK
-                                                                                                    YOU! Everything our
-                                                                                                    students experience
-                                                                                                    and accomplish at
-                                                                                                    is fueled
-                                                                                                    by a strong Annual
-                                                                                                    Fund. We are SO
-                                                                                                    grateful for your
-                                                                                                    support. 🫶
-
-
-                                                                                                </span>
-                                                                                            </div>
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-
+                                                                </div> 
                                                                 <div class="slick-slide item">
                                                                     <div>
                                                                         <div
@@ -761,9 +729,9 @@
                                                                                 <div
                                                                                     class="story-card-image mtStoryItem__img">
                                                                                     <div class="img lazyloaded"
-                                                                                        data-bg="./assets/img/kingsly/5px.jpg"
+                                                                                        data-bg="./assets/img/pakistan/01.jpg"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/5px.jpg');">
+                                                                                        style="background-image: url('./assets/img/pakistan/01.jpg');">
                                                                                     </div>
                                                                                     <div class="plus-icon"><span></span>
                                                                                     </div>
@@ -772,35 +740,78 @@
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                instagram</div>
-                                                                                            <div class="scc-date">Apr 05
-                                                                                            </div>
+                                                                                                Independence Day</div> 
+                                                                                        </div> 
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">Busy
-                                                                                                    bees 🐝 at Fairfield
-                                                                                                    this morning! 💕🌿🎶
-                                                                                                    Swipe to the end to
-                                                                                                    hear a Mr. Brian
-                                                                                                    sing-along. PS.
-                                                                                                    We’re still beaming
-                                                                                                    from yesterday’s
-                                                                                                    incredible Giving
-                                                                                                    Day! 🦁🏁If you made
-                                                                                                    a gift—THANK YOU!
-                                                                                                    Everything our
-                                                                                                    students experience
-                                                                                                    and accomplish at
-                                                                                                    is fueled
-                                                                                                    by a strong Annual
-                                                                                                    Fund. We are SO
-                                                                                                    grateful for your
-                                                                                                    support. 🫶
-
-
-                                                                                            </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="slick-slide  item">
+                                                                    <div>
+                                                                        <div
+                                                                            class="story-card small-text on-sl mtStoryItem">
+                                                                            <div class="story-card-inner">
+                                                                                <div
+                                                                                    class="story-card-image mtStoryItem__img">
+                                                                                    <div class="img lazyloaded"
+                                                                                        data-bg="./assets/img/kingsly/6px.jpg"
+                                                                                        role="img"
+                                                                                        style="background-image: url('./assets/img/teachersday/3.jpg');">
+                                                                                    </div>
+                                                                                    <div class="plus-icon"><span></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="story-card-content">
+                                                                                    <div class="scc-inner">
+                                                                                        <div class="scc-misc d-flex">
+                                                                                            <div class="scc-group">
+                                                                                                Teachers Day</div> 
+                                                                                        </div> 
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="slick-slide item">
+                                                                    <div>
+                                                                        <div
+                                                                            class="story-card small-text on-sl mtStoryItem">
+                                                                            <div class="story-card-inner">
+                                                                                <div
+                                                                                    class="story-card-image mtStoryItem__img">
+                                                                                    <div class="img lazyloaded"
+                                                                                        data-bg="./assets/img/polo/2.jpg"
+                                                                                        role="img"
+                                                                                        style="background-image: url('./assets/img/polo/2.jpg');">
+                                                                                    </div>
+                                                                                    <div class="plus-icon"><span></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="story-card-content">
+                                                                                    <div class="scc-inner">
+                                                                                        <div class="scc-misc d-flex">
+                                                                                            <div class="scc-group">
+                                                                                                Polio Compaign</div> 
+                                                                                        </div> 
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                            <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                               Show more </a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -818,32 +829,21 @@
                                                                                     <div class="img lazyloaded"
                                                                                         data-bg="./assets/img/kingsly/6px.jpg"
                                                                                         role="img"
-                                                                                        style="background-image: url('./assets/img/kingsly/6px.jpg');">
+                                                                                        style="background-image: url('./assets/img/Milad/04.jpg');">
                                                                                     </div>
-                                                                                    <div class="plus-icon"><span></span>
+                                                                                    <div class="plus-icon">  <span></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="story-card-content">
                                                                                     <div class="scc-inner">
                                                                                         <div class="scc-misc d-flex">
                                                                                             <div class="scc-group">
-                                                                                                twitter</div>
-                                                                                            <div class="scc-date">Apr 26
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="scc-text">
-                                                                                            <div class="txt truncate">
-                                                                                                <span
-                                                                                                    class="truncate">LAST
-                                                                                                    CHANCE TO GIVE ON
-                                                                                                    GIVING DAY! 🌼 Let's
-                                                                                                    help the Annual Fund
-                                                                                                    BLOOM to $1M—making
-                                                                                                    a difference in each
-                                                                                                    and every classroom.
-                                                                                                    Thank you SO MUCH
-                                                                                                    for your support! ❤️
-                                                                                                </span>
+                                                                                                Milad-un-Nabi</div> 
+                                                                                        </div> 
+                                                                                        <div class="text-center mt-3">
+                                                                                            
+                                                                                                <a href="media.html" class="btn btn-sm btn-secondary show-event" title="show more">
+                                                                                                   Show more </a>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -869,7 +869,7 @@
                             <div class="col-12">
                                 <div class="button-container">
                                     <div class="secondLvlCss">
-                                        <a href="#" class="downloadBtn" title="Read more">
+                                        <a href="media.html" class="downloadBtn" title="Read more">
                                             <span>Read more</span></a>
                                     </div>
                                 </div>
@@ -877,6 +877,7 @@
                             <hr>
 
                         </div>
+                        
                     </div>
                 </div>
         </section>
@@ -885,89 +886,96 @@
 
   
     </main>
-
-
-
-    <div class="footer contact-overlay">
+    <div class="footer contact-overlay"  >
         <div class="ft__wrapper top">
-            <div class="ft__inner clearfix">
-                <div class="ft__col-title">
-                    <h2 class="title">Your Moment Awaits</h2>
-                    <ul class="ft__buttons">
-                        <li><a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a></li>
-                        <li><a href="VisitUs.html" title="Visit Us" class="btn-g footer-button">Visit Us</a></li>
-                        <li><a href="index.html" title="My Cocoon" class="btn-g footer-button">My Cocoon</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ft__col-info">
-                    <div class="address-content-style">
-                        <div class="address-inner">
-                            <h4>Address</h4>
-                            <div class="info-group address"><span class="icon"></span>
-                                <div class="text">
-                                    46-CP & Berar Block -7&8,<br> Ameer Khusro Road, Karsaz, Karachi.
-                                    <a href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
-                                        title="Get Directions" target="_blank">Get directions</a>
-                                </div>
-                            </div>
-                            <div class="info-group phone"><span class="icon"></span>
-                                <div class="text">Tel: <a href="tel:021-34312233" title="Call Us"
-                                        target="_blank">021-34312233 </a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="key-links-content">
-                        <h4>Key Links</h4>
-                        <ul class="key-links">
-                            <li><a href="#" title="My Cocoon Online Portal">Cocoon Online Portal</a>
-                            <li><a href="#" title="Tuition &amp; Affordability">Tuition &amp; Affordability</a>
-                            <li><a href="#" title="Calendar">Calendar</a>
-                            <li><a href="#" title="Giving Day Site">Giving Day Site</a>
-                        </ul>
-                    </div>
-                </div>
+          <div class="ft__inner clearfix">
+            <div class="ft__col-title">
+              <h2 class="title">Your Moment Awaits</h2>
+              <ul class="ft__buttons">
+                <li>
+                  <a href="inquire-online.html" title="Inquire" class="btn-g footer-button">Inquire</a>
+                </li>
+                <li>
+                  <a href="VisitUs.html" title="Visit Us" class="btn-g footer-button">Visit Us</a>
+                </li>
+                <li>
+                  <a href="index.html" title="My Cocoon" class="btn-g footer-button">Cocoon</a>
+                </li>
+              </ul>
             </div>
+            <div class="ft__col-info">
+              <div class="address-content-style">
+                <div class="address-inner">
+                  <h4>Address</h4>
+                  <div class="info-group address">
+                    <span class="icon"></span>
+                    <div class="text">
+                      46-CP & Berar Block -7&8, <br />
+                      Ameer Khusro Road, Karsaz, Karachi.
+                      <a href="https://www.google.com/maps/place/Cocoon+Academy/@24.9183586,67.0336246,15788m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d67.1060354!2d24.9628191!4e1!1m6!1m2!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!2sCocoon+Academy,+C.P.+%26+Berar+Society+Cp+%26+Berar+Chs,+Karachi!2m2!1d67.0811484!2d24.8815784!3m5!1s0x3eb33f4875a7ca51:0x3ce03af671ecf258!8m2!3d24.8815784!4d67.0811484!16s%2Fg%2F11qb4_m1ps?entry=ttu"
+                        title="Get Directions" target="_blank">Get directions</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Tel: &nbsp;
+                      <a href="tel:021-34312233" title="Call us" target="_blank">
+                        021-34312233</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Mob: &nbsp;
+                      <a href="tel:03011022777" title="Call us" target="_blank">
+                        03011022777</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Email: &nbsp;
+                      <a href="mailto:info@cocoonacademy.net">
+                        info@cocoonacademy.net</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Facebook: &nbsp;
+                      <a href="https://www.facebook.com/CocoonSafeHeaven?mibextid=2JQ9oc" title="facebook">Cocoon
+                        Facebook</a>
+                    </div>
+                  </div>
+                  <div class="info-group phone my-2">
+                    <span class="icon"></span>
+                    <div class="text">
+                      Instagram: &nbsp;
+                      <a href="https://www.instagram.com/cocoon.academy?igsh=MWw0amVjcHQ3M2dkZg==" title="Instagram">Cocoon
+                        Instagram
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="ft__wrapper bottom">
-            <div class="ft__inner">
-                <div class="ft-credits clearfix hide-mobile">
-                    <div class="ft__col-left">
-                        <div class="ft-author">
-                            <p class="copyright">
-                                <a href="#" title="#" target="">#SchoolWebsite Design</a> by
-                                <a href="#" target="_blank"> Interactive Schools </a>
-                            </p>
-                        </div>
-                        <ul class="std-links">
-                            <li><a href="#" title="sitemap">Sitemap</a></li>
-                            <li><a href="#" title="Terms &amp; Privacy">Terms & Privacy</a></li>
-                            <li><a href="#" title="Cocoon" target="_blank">Cocoon</a></li>
-                        </ul>
-                    </div>
-                    <div class="ft__col-right">
-                        <div class="ft-logos">
-                            <div class="logo" style="display:none">
-                                <a href="#" target="_blank" title="NICHE">
-                                    <img style="display:none" class="lazyload"
-                                        data-src="/Images/assets/footer-logos/niche.png" alt="NICHE">
-                                </a>
-                            </div>
-                            <div class="logo">
-                                <a href="#" target="_blank" title="aisne">
-                                    <img class="lazyload" data-src="/Images/assets/footer-logos/Aisne.svg"
-                                        alt="aisne" />
-                                </a>
-                            </div>
-                            <div class="logo"><a href="#" target="_blank" title="AMS"> <img class="lazyload"
-                                        data-src="/Images/assets/footer-logos/AMS.svg" alt="AMS"> </a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="ft__inner">
+            <div class="ft-credits clearfix hide-mobile">
+              <div class="ft__col-left">
+                <div class="ft-author">
+                  <div class="copyright">
+                    <p>Design by <b>S.Creation</b></p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="footer">
         <div class="ft__wrapper top">
             <div class="ft__inner clearfix">
@@ -990,8 +998,31 @@
                                         title="Get Directions" target="_blank">Get directions</a></div>
                             </div>
                             <div class="info-group phone"><span class="icon"></span>
-                                <div class="text">Tel: <a href="tel:021-34312233" title="Call us" target="_blank">
+                                <div class="text">Tel: &nbsp; <a href="tel:021-34312233" title="Call us" target="_blank">
                                         021-34312233</a></div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Mob: &nbsp; <a href="tel:03011022777" title="Call us" target="_blank">
+                                    03011022777</a></div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Email: &nbsp; 
+                                    <a href="mailto:info@cocoonacademy.net"> 
+                                        info@cocoonacademy.net</a>
+
+                                </div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Facebook: &nbsp; 
+                                    <a href="https://www.facebook.com/CocoonSafeHeaven?mibextid=2JQ9oc" title="facebook">Cocoon  Facebook</a>
+
+                                </div>
+                            </div>
+                            <div class="info-group phone my-2"><span class="icon"></span>
+                                <div class="text">Instagram: &nbsp; 
+                                    <a href="https://www.instagram.com/cocoon.academy?igsh=MWw0amVjcHQ3M2dkZg==" title="Instagram" >Cocoon Instagram </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1021,532 +1052,34 @@
 
     <!-- Modal -->
     <!-- -----------modal modal -->
-    <div class="modal right fade" id="opRamadanbtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">Profiles</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opWomenbtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">222222222222</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opChildrenbtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">Profiles</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opAnimalbtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">222222222222</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opIndependencebtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">Profiles</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opTeachersbtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">222222222222</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opPolioBtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">Profiles</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal right fade" id="opMiladBtn" role="dialog">
-        <div class="modal-dialog  modal-xl">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header p-0 my-auto">
-                    <div class="row w-100">
-                        <div class="col-3 my-auto">
-                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h4 class="my-auto">222222222222</h4>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="modal-body space-modal">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class=" ">
-                                        <div class="mediaPopup__singleImage isPortrait">
-                                            <img src="./assets/img/kingsly/Cash_Francis.jpg"
-                                                class="img-fluid space-image">
-                                        </div>
-                                    </div>
-                                    <figcaption class=" ">
-                                        <div class="secondLvlCss">
-
-                                            <p class="isTitle featuredParagraph">Francis Cash</p>
-                                            <p class="isStaffRole"><span>Chief Operating Officer, </span><span>Chief
-                                                    Financial
-                                                    Officer</span></p>
-                                            <p class="isEmail"><a href="">fcash@kingsley.org</a></p>
-                                            <p class="isPhone"><a href="#">617-226-4904</a></p>
-                                            <div class="mediaPopup__extraDescWrapper">
-                                                <p>B.A. English; M.B.A. </p>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="btn btn-success">Save</button>
-                    <button type="button" class="btn btn-default close-btn" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div> 
+    
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script defer src="./assets/js/global.output0833.js" type="ed01f72a5966ea32cd89b3ba-text/javascript"></script>
     <script defer src="./assets/js/Homepage.output4565.js" type="ed01f72a5966ea32cd89b3ba-text/javascript"></script>
     <script src="./assets/js/rocket-loader.min.js" data-cf-settings="ed01f72a5966ea32cd89b3ba-|49" defer></script>
-<!--  
+ 
     <script>
-           document.getElementById('Ramadanbtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opRamadanbtn'));
-          myModal.show();
-        });
-        
-          document.getElementById('Womenbtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opWomenbtn'));
-          myModal.show();
-        });
-        
-        document.getElementById('Childrenbtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opChildrenbtn'));
-          myModal.show();
-        });
-        
-        document.getElementById('Animalbtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opAnimalbtn'));
-          myModal.show();
-        });
-     
-          document.getElementById('Independencebtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opIndependencebtn'));
-          myModal.show();
-        });
-        
-          document.getElementById('Teachersbtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opTeachersbtn'));
-          myModal.show();
-        });
-        
-        document.getElementById('PolioBtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opPolioBtn'));
-          myModal.show();
-        });
-        
-        document.getElementById('openMiladBtn').addEventListener('click', function() { 
-          var myModal = new bootstrap.Modal(document.getElementById('opMiladBtn'));
-          myModal.show();
-        });
-     
-     </script> -->
-      
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>  
 
 </body>
-<!-- <script>
-    $(document).ready(function () {
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            margin: 10,
-            nav: true,
-            loop: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    })
-</script> -->
-
+ 
 </html>
